@@ -1,0 +1,27 @@
+services:
+
+    deliverea.deliverea:
+        class: Octante\DelivereaBundle\Library\DelivereaWrapper
+        factory: [Octante\DelivereaBundle\Services\DelivereaFactory, create]
+        arguments:
+            - '%deliverea.user%'
+            - '%deliverea.key%'
+            - '%deliverea.useintegration%'
+
+    deliverea.address:
+        class: Octante\DelivereaBundle\Library\AddressWrapper
+        factory: [Octante\DelivereaBundle\Services\AddressFactory, create]
+
+    deliverea.collection:
+        class: Octante\DelivereaBundle\Library\CollectionWrapper
+        factory: [Octante\DelivereaBundle\Services\CollectionFactory, create]
+
+    deliverea.shipment:
+        class: Octante\DelivereaBundle\Library\ShipmentWrapper
+        factory: [Octante\DelivereaBundle\Services\ShipmentFactory, create]
+
+
+    octante.deliverea:
+        class: Octante\DelivereaBundle\Services\Deliverea
+        arguments:
+            - @deliverea.deliverea

@@ -1,0 +1,26 @@
+{
+    "name": "octante/deliverea-bundle",
+    "description": "Deliverea bundle for symfony2 and symfony3",
+    "keywords": ["deliverea","api", "bundle"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Issel Guberna",
+            "email": "issel.guberna@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/framework-bundle": "~2.3",
+        "deliverea/deliverea-php": "~0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Octante\\DelivereaBundle\\": ""
+        }
+    }
+}

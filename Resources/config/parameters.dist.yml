@@ -1,0 +1,6 @@
+deliverea.user: Zp8mcF4aNx
+deliverea.key: GnXfQoZsiG
+
+deliverea.useintegration: true
+
+deliverea.logger: Monolog\Logger
